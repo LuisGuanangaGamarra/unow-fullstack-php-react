@@ -58,6 +58,20 @@ services:
       bash -c "
           wait-for-it mysql_db:3306 -- php bin/console doctrine:database:create --if-not-exists && php bin/console doctrine:migrations:migrate --no-interaction && symfony local:server:start --allow-all-ip --no-tls"
 
+  frontend_react:
+    build:
+      context: ./frontend-employee
+      dockerfile: Dockerfile
+    container_name: app_frontend_react
+    image: app_frontend_react_image
+    ports:
+      - "80:80"
+    depends_on:
+      - symfony_auth
+      - symfony_employee
+    networks:
+      - symfony_network
+
 networks:
   symfony_network:
     driver: bridge
