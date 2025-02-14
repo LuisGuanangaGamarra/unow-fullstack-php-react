@@ -196,6 +196,7 @@
       <path value="$PROJECT_DIR$/notifications/vendor/google/apiclient-services" />
       <path value="$PROJECT_DIR$/notifications/vendor/guzzlehttp/psr7" />
       <path value="$PROJECT_DIR$/notifications/vendor/google/apiclient" />
+      <path value="$PROJECT_DIR$/auth/vendor/nelmio/cors-bundle" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />
