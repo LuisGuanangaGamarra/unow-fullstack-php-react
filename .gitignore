@@ -1,0 +1,31 @@
+# Symfony 7.2
+*/.idea/
+*/.vscode/
+*/phpunit.xml
+*/phpunit.xml.dist
+*/.env.local
+*/.env.*.local
+*/.env.*.test.local
+*/.env.*.prod.local
+*/.env.*.dev.local
+*/.php_cs.cache
+*/.php_cs.dist
+*/.composer/
+*/vendor/
+*/var/
+*/node_modules/
+*/public/bundles/
+*/tests/var/
+*/tests/cache/
+*/tests/testdata/
+*/Thumbs.db
+
+# Logs
+*/var/log/
+*/var/logs/
+
+# Temp files
+*/var/cache/
+*/var/sessions/
+
+*/config/jwt

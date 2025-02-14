@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MessDetectorOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PHPCSFixerOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PHPCodeSnifferOptionsConfiguration">
+    <option name="highlightLevel" value="WARNING" />
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PhpCodeSniffer">
+    <phpcs_settings>
+      <phpcs_by_interpreter asDefaultInterpreter="true" interpreter_id="c4e24134-5431-44f6-95b6-4e218773e8a7" timeout="30000" />
+    </phpcs_settings>
+  </component>
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/polyfill-php83" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/runtime" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/auth/vendor/composer" />
+      <path value="$PROJECT_DIR$/auth/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/auth/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/auth/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/auth/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/auth/vendor/lexik/jwt-authentication-bundle" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/clock" />
+      <path value="$PROJECT_DIR$/auth/vendor/namshi/jose" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/security-csrf" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/auth/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/password-hasher" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/type-info" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/auth/vendor/lcobucci/clock" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/security-core" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/security-http" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/auth/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/auth/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/auth/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/auth/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/auth/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/auth/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/auth/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/auth/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/auth/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/auth/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/auth/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/auth/vendor/doctrine/sql-formatter" />
+      <path value="$PROJECT_DIR$/auth/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/auth/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/auth/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/auth/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/auth/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/employee/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/employee/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/employee/vendor/composer" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/http-client" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/polyfill-php83" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/employee/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/employee/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/runtime" />
+      <path value="$PROJECT_DIR$/employee/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/employee/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/employee/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/employee/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/employee/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/employee/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/employee/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/employee/vendor/doctrine/sql-formatter" />
+      <path value="$PROJECT_DIR$/employee/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/employee/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/employee/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/employee/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/employee/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/employee/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/employee/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/employee/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/notifications/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/notifications/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/notifications/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/notifications/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/notifications/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/notifications/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/notifications/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/notifications/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/notifications/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/notifications/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/notifications/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/runtime" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/notifications/vendor/paragonie/constant_time_encoding" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/polyfill-php83" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/http-client" />
+      <path value="$PROJECT_DIR$/notifications/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/google-mailer" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/notifications/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/notifications/vendor/google/auth" />
+      <path value="$PROJECT_DIR$/notifications/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/notifications/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/notifications/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/notifications/vendor/composer" />
+      <path value="$PROJECT_DIR$/notifications/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/notifications/vendor/google/apiclient-services" />
+      <path value="$PROJECT_DIR$/notifications/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/notifications/vendor/google/apiclient" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />
+  <component name="PhpStan">
+    <PhpStan_settings>
+      <phpstan_by_interpreter asDefaultInterpreter="true" interpreter_id="c4e24134-5431-44f6-95b6-4e218773e8a7" timeout="60000" />
+    </PhpStan_settings>
+  </component>
+  <component name="PhpStanOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/auth/vendor/autoload.php" />
+    </phpunit_settings>
+  </component>
+  <component name="Psalm">
+    <Psalm_settings>
+      <psalm_fixer_by_interpreter asDefaultInterpreter="true" interpreter_id="c4e24134-5431-44f6-95b6-4e218773e8a7" timeout="60000" />
+    </Psalm_settings>
+  </component>
+  <component name="PsalmOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+</project>

@@ -1,0 +1,66 @@
+services:
+  symfony_auth:
+    build:
+      context: ./auth
+      dockerfile: Dockerfile
+    container_name: symfony_app_auth
+    image: symfony_app_auth_image
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mysql_db
+    networks:
+      - symfony_network
+    command: >
+      bash -c "
+          wait-for-it mysql_db:3306 -- php bin/console doctrine:migrations:migrate --no-interaction && symfony local:server:start --allow-all-ip --no-tls"
+
+  mysql_db:
+    build:
+      context: ./database
+      dockerfile: Dockerfile
+    container_name: symfony_app_mysql
+    image: symfony_app_mysql_image
+    ports:
+      - "3306:3306"
+    networks:
+      - symfony_network
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  symfony_notifications:
+    build:
+      context: ./notifications
+      dockerfile: Dockerfile
+    container_name: symfony_app_notifications
+    image: symfony_app_notifications_image
+    ports:
+      - "8001:8000"
+    depends_on:
+      - symfony_auth
+    networks:
+      - symfony_network
+
+  symfony_employee:
+    build:
+      context: ./employee
+      dockerfile: Dockerfile
+    container_name: symfony_app_employee
+    image: symfony_app_employee_image
+    ports:
+      - "8002:8000"
+    depends_on:
+      - symfony_auth
+      - mysql_db
+    networks:
+      - symfony_network
+    command: >
+      bash -c "
+          wait-for-it mysql_db:3306 -- php bin/console doctrine:database:create --if-not-exists && php bin/console doctrine:migrations:migrate --no-interaction && symfony local:server:start --allow-all-ip --no-tls"
+
+networks:
+  symfony_network:
+    driver: bridge
+
+volumes:
+  mysql_data:
