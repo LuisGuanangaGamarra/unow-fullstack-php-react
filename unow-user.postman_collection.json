@@ -1,0 +1,325 @@
+{
+	"info": {
+		"_postman_id": "fd0df4e2-ab53-4bb4-a090-e870f9e76cac",
+		"name": "unow-user",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5839330"
+	},
+	"item": [
+		{
+			"name": "registro de usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"luis@gmail.com.ec\",\r\n    \"password\": \"mi_contraseña_segura\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/users/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"luis@gmail.com.ec\",\r\n    \"password\": \"mi_contraseña_segura\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "validate token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3Mzk1Mjg0MjgsImV4cCI6MTczOTUzMjAyOCwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoibHVpc0BnbWFpbC5jb20uZWMifQ.cwipjh9yF78XZ3xuLe3clGlFdFunJEdat_tlWxEykJ3pgufipllyWHkgS49Wvimn_hWupbcmj27XRZJ-woSKEEO_S2k3twAtftmQU1u7tqcAQWONWWT3hTWTUk77oCntXBpPf8UWLTi7ISOOO79sjuvM6-dWgLyWrQ8f_1k7mQvaGRl42SKBuwHnS6Z37UJzW98eUwv41HfMVfjuLAL5uJIflsku4XK4dhDJsfJmHBhxFaZRu0VyjxZjFdMy-ENvBM1-d0B8TEjM9chQgyolYjLnuezy8DrtCCwOVMcvY8lIg6kQIMyHX1m2JXboKhpDKjXcpXwS2s2KYsjWNU-O1w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/users/validate_token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"validate_token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "send mail",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3Mzk1Mjg0MjgsImV4cCI6MTczOTUzMjAyOCwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoibHVpc0BnbWFpbC5jb20uZWMifQ.cwipjh9yF78XZ3xuLe3clGlFdFunJEdat_tlWxEykJ3pgufipllyWHkgS49Wvimn_hWupbcmj27XRZJ-woSKEEO_S2k3twAtftmQU1u7tqcAQWONWWT3hTWTUk77oCntXBpPf8UWLTi7ISOOO79sjuvM6-dWgLyWrQ8f_1k7mQvaGRl42SKBuwHnS6Z37UJzW98eUwv41HfMVfjuLAL5uJIflsku4XK4dhDJsfJmHBhxFaZRu0VyjxZjFdMy-ENvBM1-d0B8TEjM9chQgyolYjLnuezy8DrtCCwOVMcvY8lIg6kQIMyHX1m2JXboKhpDKjXcpXwS2s2KYsjWNU-O1w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"luis@hotmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8001/api/notifications/send-mail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"notifications",
+						"send-mail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registrar empleado",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3Mzk0OTc4NTYsImV4cCI6MTczOTUwMTQ1Niwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoibHVpc0BnbWFpbC5jb20uZWMifQ.u1fujiBJKyzSgNx7UtdSe9U7TsB3d4MwHZdCu6_ktxBUToo_WS5sp71dhpjWYsEIGDDao7POXX7wHqiKZJxyc8CFK6avl4qpBCQGJ4xvYmPSfGnSL7O5scPts819lqcbOys3YNruTn8SaHPjVQywgj_sC-wMUE0y2LfFxb9-X4oRk-mYMPTaofpImRHAfguKcOao-NMqHsg3s9QqdjfkEIEbAPYtgJXuKmqwf2cVDuiqr3I7KBACr8bQZj1zyDMPTZj2U1eJFJneKocwxWRK7xziMzTWo9ZwKMcaaC-iUmCOq9oe6HnhANh8-r_6g4pUeneuLGLar1V0MuJc8v5paw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"luis@hotmail.com\",\r\n    \"first_name\": \"luis\",\r\n    \"last_name\": \"Guananga\",\r\n    \"position\": \"position\",\r\n    \"birth_date\": \"2025-02-13\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/api/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar empleado",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3Mzk0NjE0MTUsImV4cCI6MTczOTQ2NTAxNSwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoibHVpc0BnbWFpbC5jb20ifQ.NQnfivOMGLAz4em6PDB0QJaD2-O6QC3_m_eUXpSMyyATXu6opdbhPXk8UQEhfHE30Zu55DhFRN6Pq_99sYQFQlVFiRdImX8MMsRQ29hzCdW4XvKItyS1Y-dNueeBmqg18u7qSmPGB-_-L5ViBRT2ZUDBwb7LPcy7fMyP6-6M0jmWXAlt8hn-iKFiimOkS7ZQePhzK49_RO3bplDAhYoREqCySAqzSsdn8pFzIdypO0_IvDrtqSiP4HcFvLcTQb8g9yMr8o_cp_doqcMFX5tDtOPFKLiAQwo_enPzQK_zgq3RYsR6ROCn6baeu9aEq5Tb_mTioeOqxabw4_FnoJwWog",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"Mario\",\r\n    \"last_name\": \"Godinez\",\r\n    \"position\": \"Fullstack\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost.1:8002/api/employees/1",
+					"protocol": "http",
+					"host": [
+						"localhost",
+						"1"
+					],
+					"port": "8002",
+					"path": [
+						"api",
+						"employees",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar empleados",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3Mzk0OTc4NTYsImV4cCI6MTczOTUwMTQ1Niwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoibHVpc0BnbWFpbC5jb20uZWMifQ.u1fujiBJKyzSgNx7UtdSe9U7TsB3d4MwHZdCu6_ktxBUToo_WS5sp71dhpjWYsEIGDDao7POXX7wHqiKZJxyc8CFK6avl4qpBCQGJ4xvYmPSfGnSL7O5scPts819lqcbOys3YNruTn8SaHPjVQywgj_sC-wMUE0y2LfFxb9-X4oRk-mYMPTaofpImRHAfguKcOao-NMqHsg3s9QqdjfkEIEbAPYtgJXuKmqwf2cVDuiqr3I7KBACr8bQZj1zyDMPTZj2U1eJFJneKocwxWRK7xziMzTWo9ZwKMcaaC-iUmCOq9oe6HnhANh8-r_6g4pUeneuLGLar1V0MuJc8v5paw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8002/api/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "borrar empleado",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3Mzk0OTc4NTYsImV4cCI6MTczOTUwMTQ1Niwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoibHVpc0BnbWFpbC5jb20uZWMifQ.u1fujiBJKyzSgNx7UtdSe9U7TsB3d4MwHZdCu6_ktxBUToo_WS5sp71dhpjWYsEIGDDao7POXX7wHqiKZJxyc8CFK6avl4qpBCQGJ4xvYmPSfGnSL7O5scPts819lqcbOys3YNruTn8SaHPjVQywgj_sC-wMUE0y2LfFxb9-X4oRk-mYMPTaofpImRHAfguKcOao-NMqHsg3s9QqdjfkEIEbAPYtgJXuKmqwf2cVDuiqr3I7KBACr8bQZj1zyDMPTZj2U1eJFJneKocwxWRK7xziMzTWo9ZwKMcaaC-iUmCOq9oe6HnhANh8-r_6g4pUeneuLGLar1V0MuJc8v5paw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8002/api/employees/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8002",
+					"path": [
+						"api",
+						"employees",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscar empleado",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3Mzk0OTc4NTYsImV4cCI6MTczOTUwMTQ1Niwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoibHVpc0BnbWFpbC5jb20uZWMifQ.u1fujiBJKyzSgNx7UtdSe9U7TsB3d4MwHZdCu6_ktxBUToo_WS5sp71dhpjWYsEIGDDao7POXX7wHqiKZJxyc8CFK6avl4qpBCQGJ4xvYmPSfGnSL7O5scPts819lqcbOys3YNruTn8SaHPjVQywgj_sC-wMUE0y2LfFxb9-X4oRk-mYMPTaofpImRHAfguKcOao-NMqHsg3s9QqdjfkEIEbAPYtgJXuKmqwf2cVDuiqr3I7KBACr8bQZj1zyDMPTZj2U1eJFJneKocwxWRK7xziMzTWo9ZwKMcaaC-iUmCOq9oe6HnhANh8-r_6g4pUeneuLGLar1V0MuJc8v5paw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8002/api/employees/search?name=Guananga",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8002",
+					"path": [
+						"api",
+						"employees",
+						"search"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Guananga"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
